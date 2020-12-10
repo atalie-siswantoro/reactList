@@ -1,4 +1,9 @@
 import React, {Component} from "react";
+// import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom"
+// import BMI from './studiKasusModul3/BMI';
+// import Cicilan from './studiKasusModul3/Cicilan';
+// import Jualbeli from './studiKasusModul3/Jualbeli';
+// import KonversiBilangan from './studiKasusModul3/KonversiBilangan';
 const $ = window.jQuery
 
 class List extends Component {
@@ -8,7 +13,7 @@ class List extends Component {
       siswa : [
         {nis: "100", nama: "Musthofa", alamat: "Surabaya"},
         {nis: "101", nama: "Nurul", alamat: "Malang"},
-        {nis: "102", nama: "misbah", alamat: "Pasuruan"},
+        {nis: "102", nama: "Misbah", alamat: "Pasuruan"},
       ],
       nis: "",
       nama: "",
@@ -88,6 +93,36 @@ Drop = (index) => {
 
   render() {
     return (
+      
+      // <Router>
+      //   <div>
+      //     <nav>
+      //       <ul>
+      //         <li>
+      //           <Link to="/BMI" className="nav-link">BMI</Link>
+      //           <Link to="/Cicilan" className="nav-link">Cicilan Bank</Link>
+      //           <Link to="/Jualbeli" className="nav-link">Jualbeli</Link>
+      //           <Link to="/Konversi" className="nav-link">Konversi Bilangan</Link>
+      //         </li>
+      //       </ul>
+      //     </nav>
+      //     <Switch>
+      //       <Route path="/BMI">
+      //         <BMI />
+      //       </Route>
+      //       <Route path="/Cicilan">
+      //         <Cicilan />
+      //       </Route>
+      //       <Route path="/Jualbeli">
+      //         <Jualbeli />
+      //       </Route>
+      //       <Route path="/Konversi">
+      //         <KonversiBilangan />
+      //       </Route>
+      //     </Switch>
+      //   </div>
+      // </Router>
+
       <div className="container">
         <ul className="list-group"> 
           {this.state.siswa.map((item,index) => { 
